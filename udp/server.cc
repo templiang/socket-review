@@ -13,7 +13,6 @@ int main(){
         std::cerr<<"创建套接字失败\n"<<std::endl;
     }
 
-    //sockaddr_in与sockaddr为并列数据结构，两者占用内存大小一致，因此两者指针可以相互转换
     //sockaddr_in是internet环境下套接字的地址形式
     sockaddr_in addr;
     addr.sin_family=AF_INET;
